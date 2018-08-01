@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1765422-2813-44f3-bf25-ee3fce4456a5" name="Default Changelist" comment="" />
+    <list default="true" id="c1765422-2813-44f3-bf25-ee3fce4456a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classAssignments/gmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classAssignments/flipkart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classAssignments/flipkart.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,29 +33,33 @@
           <entry key="MF" value="1" />
           <entry key="class" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="5" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="6" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
           <entry key="Manifest" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2387" />
-          <entry key="xml" value="55" />
+          <entry key="java" value="3906" />
+          <entry key="properties" value="122" />
+          <entry key="xml" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2387" />
-          <entry key="XML" value="55" />
+          <entry key="JAVA" value="3906" />
+          <entry key="Properties" value="122" />
+          <entry key="XML" value="109" />
         </counts>
       </usages-collector>
     </session>
@@ -58,30 +69,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/training/testng/exampleDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="29" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2341#2342#0" expanded="true" />
-                <element signature="e#2417#2418#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/gmail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1948#1964#0" expanded="true" />
+                <element signature="e#3056#3057#0" expanded="true" />
+                <element signature="e#3121#3122#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2303#2304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -100,17 +144,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/training/testng/exampleDriverTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/training/testng/googleSuggestionTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/training/testng/googleSuggestion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/training/testng/exampleDriver.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classAssignments/gmail.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -120,6 +170,7 @@
     <option name="width" value="1255" />
     <option name="height" value="644" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,8 +220,7 @@
               <item name="QATraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,7 +231,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532978339622" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533103964070" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jars/testng-6.0.jar!/" />
@@ -267,42 +317,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 42m 00s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 01m 45s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 42m 13s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 04m 16s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 42m 50s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 07m 14s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 43m 29s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 22m 59s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 45m 19s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 24m 44s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 45m 36s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 02h 25m 51s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 47m 27s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 10h 06m 49s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 48m 20s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 10h 11m 42s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 00h 49m 14s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 10h 13m 05s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.07.31 at 21h 23m 02s.xml">
+    <history-entry file="_home_pankaj_Desktop_QATraining_testng_xml - 2018.08.01 at 10h 15m 02s.xml">
       <configuration name="/home/pankaj/Desktop/QATraining/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-11" width="1311" height="780" extended-state="6" />
+    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25098658" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15627466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,15 +360,15 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.39122137" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36656442" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39110428" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35276073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32668713" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -350,13 +400,6 @@
     <entry file="file://$PROJECT_DIR$/QATraining.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.13.0/selenium-support-3.13.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3324">
@@ -366,11 +409,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/training/testng/exampleDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="29" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/gmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="79" column="22" lean-forward="true" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1948#1964#0" expanded="true" />
+            <element signature="e#3056#3057#0" expanded="true" />
+            <element signature="e#3121#3122#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -378,18 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/classAssignments/flipkart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2341#2342#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -450,6 +520,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -3,7 +3,6 @@ package classAssignments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,10 +10,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.InputStream;
+import java.util.Properties;
 import java.util.Set;
+
+import static com.sun.org.apache.xerces.internal.utils.SecuritySupport.getResourceAsStream;
+
 
 public class flipkart
 {
+
+
+static String username;
+static String password;
 static WebDriver driver;
 static String baseUrl;
 static String currentWindow;
@@ -23,15 +31,29 @@ static WebDriverWait wait;
 static By emailL=By.cssSelector("form>div:first-child >input[type='text']");
 static By passwordL=By.cssSelector("form>div >input[type='password']");
 static By searchBoxL=By.cssSelector("input[name='q']");
-static By sortToHighLowPriceL= By.cssSelector("div[class*='col-10-12']>div:first-child>div>div:nth-of-type(2)>div:nth-of-type(4)");
+static By sortToLowHighPriceL= By.cssSelector("div[class*='col-10-12']>div:first-child>div>div:nth-of-type(2)>div:nth-of-type(3)");
 static By firstElementL=By.cssSelector("div[class*='col-10-12']:nth-of-type(2)>div:nth-of-type(2)>div>div:first-child>div>a:first-child>div:first-child");
-static By priceL=By.cssSelector("div[id='container']>div>div:nth-of-type(1)>div>div>div:first-child>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)>div:first-child>div>div:first-child");
-static By cartButtonL=By.cssSelector("li[class='col col-6-12']:nth-of-type(1)");
+static By priceL=By.cssSelector("div[class*='col-10-12']:nth-of-type(2)>div:nth-of-type(2)>div>div:first-child>div>a:nth-of-type(3)>div>div:first-child");
+static By cartButtonL=By.cssSelector("div>ul>li:nth-child(1)>button");
+static By cartPriceL=By.xpath("//div[@style='left: auto;']/div/div/div/div[1]/div[2]");
 
     public static void setBrowser(String browser,String url)
     {
+        Properties prop = new Properties();
+        InputStream input = null;
 
-        baseUrl=url;
+        try {
+            input = getResourceAsStream("config.properties");
+            prop.load(input);
+            username=prop.getProperty("flipkart.username");
+            password=prop.getProperty("flipkart.password");
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+            baseUrl=url;
         if(browser.equals("firefox"))
         {
             System.setProperty("webdriver.firefox.marionette","/home/pankaj/Desktop/jars/drivers/geckodriver");
@@ -51,27 +73,30 @@ static By cartButtonL=By.cssSelector("li[class='col col-6-12']:nth-of-type(1)");
     public void testRunner() throws Exception {
 
         setBrowser("chrome","https://flipkart.com");
-        doLogin("anuragi.pankaj@gmail.com","9968285308");
+        doLogin(username,password);
         searchItem("earphones");
-        chooseFav();
+        String screenPrice=chooseFav();
         switchWindow();
-        String expectedPrice=addToKart();
-        String actualPrice=getInnerText("//div[@style='left: auto;']/div/div/div/div[3]/div/div[2]");
-        Assert.assertEquals(expectedPrice,actualPrice);
+        addToKart();
+        String cartPrice=getInnerText(cartPriceL);
+
+        System.out.println(screenPrice+":"+cartPrice);
+        Assert.assertEquals(screenPrice,cartPrice);
+
+        driver.quit();
     }
 
-    private String getInnerText(String locator)
+    private String getInnerText(By locator)
     {
-        return driver.findElement(By.xpath(locator)).getText();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator).getText();
     }
 
-    private String addToKart()
+    private void addToKart()
     {
         System.out.println("ADDING TO CART..");
-        wait.until(ExpectedConditions.presenceOfElementLocated(priceL));
-        String amount=driver.findElement(priceL).getText();
+        wait.until(ExpectedConditions.elementToBeClickable(cartButtonL));
         driver.findElement(cartButtonL).click();
-        return amount;
     }
 
     private void switchWindow()
@@ -91,15 +116,17 @@ static By cartButtonL=By.cssSelector("li[class='col col-6-12']:nth-of-type(1)");
 
     }
 
-    private void chooseFav()
+    private String chooseFav()
     {
         System.out.println("CHOOSING FAV..");
 
         //sorting and choosing the highest
-        wait.until(ExpectedConditions.elementToBeClickable(sortToHighLowPriceL));
-        driver.findElement(sortToHighLowPriceL).click();
+        wait.until(ExpectedConditions.elementToBeClickable(sortToLowHighPriceL));
+        driver.findElement(sortToLowHighPriceL).click();
         wait.until(ExpectedConditions.stalenessOf(driver.findElement(firstElementL)));
+        String price=driver.findElement(priceL).getText();
         driver.findElement(firstElementL).click();
+        return price;
 
     }
 
@@ -115,8 +142,8 @@ static By cartButtonL=By.cssSelector("li[class='col col-6-12']:nth-of-type(1)");
     private void doLogin(String email, String password)
     {
         System.out.println("LOGIN..");
-
         driver.get(baseUrl);
+        driver.manage().window().maximize();
         wait.until(ExpectedConditions.presenceOfElementLocated(emailL));
         driver.findElement(emailL).sendKeys(email);
         driver.findElement(passwordL).sendKeys(password);
