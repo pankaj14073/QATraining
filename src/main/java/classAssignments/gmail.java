@@ -88,7 +88,9 @@ public class gmail
 
     private String getNthValue(By locator,int n)
     {
-        String value= driver.findElements(locator).get(n).getText();
+        String value=null;
+        try {
+         value= driver.findElements(locator).get(n+1).getText();
         if(value.contains("'"))
         {
             value=value.split("'")[1];
@@ -96,6 +98,11 @@ public class gmail
         else if(value.contains(","))
         {
             value=value.split(",")[0];
+        }
+       }
+        catch (Exception e)
+        {
+            System.out.println("Error in Indexing!");
         }
         return value;
     }

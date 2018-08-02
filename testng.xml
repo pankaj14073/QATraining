@@ -2,7 +2,7 @@
 <suite name="exampleDriverTest">
     <test name="verifyUrl">
         <classes>
-            <class name="classAssignments.flipkart"/>
+            <class name="classAssignments.javaAPI"/>
         </classes>
     </test>
 </suite>
